@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/goit-react-hw-19/"
+  base: "/goit-react-hw-29/"
 })
