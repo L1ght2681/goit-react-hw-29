@@ -2,5 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 0;
+  gap: 12px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #969696, #3b5081);
+  border: 1px solid #0080ff;
+  border-radius: 8px;
+}
+
+.item button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ae2222;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.item button:hover {
+  background-color: #ff3d3d;
 }

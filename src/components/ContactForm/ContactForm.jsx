@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../redux/contactsSlice';
+import { addContact } from '../../redux/actions';
 import { selectContacts } from '../../redux/selectors';
 import css from './ContactForm.module.css';
 
@@ -36,7 +36,7 @@ export default function ContactForm() {
           value={name}
           onChange={e => setName(e.target.value)}
           pattern="^[a-zA-Zа-яА-ЯіІїЇєЄґҐ]+(([' \-][a-zA-Zа-яА-ЯіІїЇєЄґҐ ])?[a-zA-Zа-яА-ЯіІїЇєЄґҐ]*)*$"
-          title="Name may contain only letters, apostrophe, dash and spaces."
+          title="Ім’я може містити лише літери, апостроф, дефіс і пробіли"
           required
         />
       </label>
@@ -48,7 +48,7 @@ export default function ContactForm() {
           value={number}
           onChange={e => setNumber(e.target.value)}
           pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          title="Номер телефону має складатися з цифр і може містити пробіли, дефіси, дужки та починатися з +"
           required
         />
       </label>

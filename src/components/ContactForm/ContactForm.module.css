@@ -1,12 +1,47 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 14px;
 }
 
 .label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 10px 12px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form input:focus {
+  border-color: #eaf63b;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #a277d3, #4c00ff);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.form button:hover {
+  opacity: 0.85;
+}
+
+.form button:hover {
+  background-color: #0051ffc9;
 }

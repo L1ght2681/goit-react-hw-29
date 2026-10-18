@@ -1,0 +1,26 @@
+:global(body) {
+  margin: 0;
+  background-color: #a09595;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #b6d4ff;
+}
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: linear-gradient(135deg, #b5bbc4, #8b5cf6, #1c3071);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.08);
+}
+
+.container h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.container h2 {
+  margin: 24px 0 12px;
+  font-size: 20px;
+}
